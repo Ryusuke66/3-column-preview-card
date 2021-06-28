@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Kumbh Sans";
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.background {
+    position: absolute;
+    z-index: -99;
+}
+
+.background .top {
+    position:inherit;
+    top:0;
+    right:0;
+}
+
+.background .bottom {
+    position: inherit;
+    bottom: 10px;
+    right: 10px;
+}
