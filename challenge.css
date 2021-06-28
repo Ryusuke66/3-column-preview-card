@@ -1,0 +1,108 @@
+* {
+    box-sizing:border-box;
+}
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", "Big Shoulders Display", sans-serif;
+    font-size: 15px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card div {
+    padding: 42px;
+    color: hsl(0, 0%, 95%);
+    display: grid;
+    grid-template-rows: 10% 20% 40%;
+}
+
+.card div h1 {
+    font-family: "Big Shoulders Display";
+    font-size: 32px;
+}
+
+.card div p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.card .first {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card .second {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card .third {
+    background-color: hsl(179, 100%, 13%);
+}
+ 
+.card div button {
+    border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+.card .first button {
+    color: hsl(31, 77%, 52%);
+}
+.card .second button {
+    color: hsl(184, 100%, 22%);
+}
+.card .third button {
+    color: hsl(179, 100%, 13%);
+}
+
+.card div button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: white;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.attribution a {
+    color: hsl(184, 100%, 22%);
+}
+
+.attribution a:visited {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 991px) {
+    .card {
+        display: block;
+        width: 85%;
+    }
+
+    .card div {
+        padding: 55px;
+    }
+
+    .card div button {
+        margin-top: 20px;
+    }
+
+}
